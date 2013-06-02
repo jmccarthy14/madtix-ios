@@ -23,9 +23,7 @@
 		E111319F175706E100414E7B /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = E111319E175706E100414E7B /* second.png */; };
 		E11131A1175706E100414E7B /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E11131A0175706E100414E7B /* second@2x.png */; };
 		E11131A4175706E100414E7B /* MaapFirstViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = E11131A2175706E100414E7B /* MaapFirstViewController_iPhone.xib */; };
-		E11131A7175706E100414E7B /* MaapFirstViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = E11131A5175706E100414E7B /* MaapFirstViewController_iPad.xib */; };
 		E11131AA175706E100414E7B /* MaapSecondViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = E11131A8175706E100414E7B /* MaapSecondViewController_iPhone.xib */; };
-		E11131AD175706E100414E7B /* MaapSecondViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = E11131AB175706E100414E7B /* MaapSecondViewController_iPad.xib */; };
 		E11131B5175706E100414E7B /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E11131B4175706E100414E7B /* SenTestingKit.framework */; };
 		E11131B6175706E100414E7B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E111317C175706E100414E7B /* UIKit.framework */; };
 		E11131B7175706E100414E7B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E111317E175706E100414E7B /* Foundation.framework */; };
@@ -68,9 +66,7 @@
 		E111319E175706E100414E7B /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		E11131A0175706E100414E7B /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		E11131A3175706E100414E7B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MaapFirstViewController_iPhone.xib; sourceTree = "<group>"; };
-		E11131A6175706E100414E7B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MaapFirstViewController_iPad.xib; sourceTree = "<group>"; };
 		E11131A9175706E100414E7B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MaapSecondViewController_iPhone.xib; sourceTree = "<group>"; };
-		E11131AC175706E100414E7B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MaapSecondViewController_iPad.xib; sourceTree = "<group>"; };
 		E11131B3175706E100414E7B /* MaapTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MaapTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E11131B4175706E100414E7B /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		E11131BC175706E100414E7B /* MaapTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MaapTests-Info.plist"; sourceTree = "<group>"; };
@@ -199,7 +195,6 @@
 			isa = PBXGroup;
 			children = (
 				E11131A2175706E100414E7B /* MaapFirstViewController_iPhone.xib */,
-				E11131A5175706E100414E7B /* MaapFirstViewController_iPad.xib */,
 				E1113194175706E100414E7B /* MaapFirstViewController.h */,
 				E1113195175706E100414E7B /* MaapFirstViewController.m */,
 			);
@@ -212,7 +207,6 @@
 				E111319B175706E100414E7B /* MaapSecondViewController.h */,
 				E111319C175706E100414E7B /* MaapSecondViewController.m */,
 				E11131A8175706E100414E7B /* MaapSecondViewController_iPhone.xib */,
-				E11131AB175706E100414E7B /* MaapSecondViewController_iPad.xib */,
 			);
 			name = maapsecondview;
 			sourceTree = "<group>";
@@ -323,9 +317,7 @@
 				E111319F175706E100414E7B /* second.png in Resources */,
 				E11131A1175706E100414E7B /* second@2x.png in Resources */,
 				E11131A4175706E100414E7B /* MaapFirstViewController_iPhone.xib in Resources */,
-				E11131A7175706E100414E7B /* MaapFirstViewController_iPad.xib in Resources */,
 				E11131AA175706E100414E7B /* MaapSecondViewController_iPhone.xib in Resources */,
-				E11131AD175706E100414E7B /* MaapSecondViewController_iPad.xib in Resources */,
 				E19EC0C5175853EB0074567B /* BuyerViewListingTableCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -404,28 +396,12 @@
 			name = MaapFirstViewController_iPhone.xib;
 			sourceTree = "<group>";
 		};
-		E11131A5175706E100414E7B /* MaapFirstViewController_iPad.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E11131A6175706E100414E7B /* en */,
-			);
-			name = MaapFirstViewController_iPad.xib;
-			sourceTree = "<group>";
-		};
 		E11131A8175706E100414E7B /* MaapSecondViewController_iPhone.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				E11131A9175706E100414E7B /* en */,
 			);
 			name = MaapSecondViewController_iPhone.xib;
-			sourceTree = "<group>";
-		};
-		E11131AB175706E100414E7B /* MaapSecondViewController_iPad.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E11131AC175706E100414E7B /* en */,
-			);
-			name = MaapSecondViewController_iPad.xib;
 			sourceTree = "<group>";
 		};
 		E11131BD175706E100414E7B /* InfoPlist.strings */ = {
@@ -464,10 +440,10 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -489,10 +465,10 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -503,6 +479,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Maap/Maap-Prefix.pch";
 				INFOPLIST_FILE = "Maap/Maap-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -514,6 +491,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Maap/Maap-Prefix.pch";
 				INFOPLIST_FILE = "Maap/Maap-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
