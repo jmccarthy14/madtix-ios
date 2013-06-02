@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E111317D175706E100414E7B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E111317C175706E100414E7B /* UIKit.framework */; };
+		E111317F175706E100414E7B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E111317E175706E100414E7B /* Foundation.framework */; };
+		E1113181175706E100414E7B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1113180175706E100414E7B /* CoreGraphics.framework */; };
+		E1113187175706E100414E7B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E1113185175706E100414E7B /* InfoPlist.strings */; };
+		E1113189175706E100414E7B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E1113188175706E100414E7B /* main.m */; };
+		E111318D175706E100414E7B /* MaapAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E111318C175706E100414E7B /* MaapAppDelegate.m */; };
+		E111318F175706E100414E7B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E111318E175706E100414E7B /* Default.png */; };
+		E1113191175706E100414E7B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E1113190175706E100414E7B /* Default@2x.png */; };
+		E1113193175706E100414E7B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E1113192175706E100414E7B /* Default-568h@2x.png */; };
+		E1113196175706E100414E7B /* MaapFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1113195175706E100414E7B /* MaapFirstViewController.m */; };
+		E1113198175706E100414E7B /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = E1113197175706E100414E7B /* first.png */; };
+		E111319A175706E100414E7B /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E1113199175706E100414E7B /* first@2x.png */; };
+		E111319D175706E100414E7B /* MaapSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E111319C175706E100414E7B /* MaapSecondViewController.m */; };
+		E111319F175706E100414E7B /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = E111319E175706E100414E7B /* second.png */; };
+		E11131A1175706E100414E7B /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E11131A0175706E100414E7B /* second@2x.png */; };
+		E11131A4175706E100414E7B /* MaapFirstViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = E11131A2175706E100414E7B /* MaapFirstViewController_iPhone.xib */; };
+		E11131A7175706E100414E7B /* MaapFirstViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = E11131A5175706E100414E7B /* MaapFirstViewController_iPad.xib */; };
+		E11131AA175706E100414E7B /* MaapSecondViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = E11131A8175706E100414E7B /* MaapSecondViewController_iPhone.xib */; };
+		E11131AD175706E100414E7B /* MaapSecondViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = E11131AB175706E100414E7B /* MaapSecondViewController_iPad.xib */; };
+		E11131B5175706E100414E7B /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E11131B4175706E100414E7B /* SenTestingKit.framework */; };
+		E11131B6175706E100414E7B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E111317C175706E100414E7B /* UIKit.framework */; };
+		E11131B7175706E100414E7B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E111317E175706E100414E7B /* Foundation.framework */; };
+		E11131BF175706E100414E7B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E11131BD175706E100414E7B /* InfoPlist.strings */; };
+		E11131C2175706E100414E7B /* MaapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E11131C1175706E100414E7B /* MaapTests.m */; };
+		E19EC0C5175853EB0074567B /* BuyerViewListingTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E19EC0C4175853EB0074567B /* BuyerViewListingTableCell.xib */; };
+		E19EC0D117585BA70074567B /* BuyerViewListingTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E19EC0D017585BA70074567B /* BuyerViewListingTableCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E11131B8175706E100414E7B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1113171175706E100414E7B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1113178175706E100414E7B;
+			remoteInfo = Maap;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E1113179175706E100414E7B /* Maap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Maap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E111317C175706E100414E7B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E111317E175706E100414E7B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E1113180175706E100414E7B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E1113184175706E100414E7B /* Maap-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Maap-Info.plist"; sourceTree = "<group>"; };
+		E1113186175706E100414E7B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E1113188175706E100414E7B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E111318A175706E100414E7B /* Maap-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Maap-Prefix.pch"; sourceTree = "<group>"; };
+		E111318B175706E100414E7B /* MaapAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaapAppDelegate.h; sourceTree = "<group>"; };
+		E111318C175706E100414E7B /* MaapAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MaapAppDelegate.m; sourceTree = "<group>"; };
+		E111318E175706E100414E7B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		E1113190175706E100414E7B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		E1113192175706E100414E7B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		E1113194175706E100414E7B /* MaapFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaapFirstViewController.h; sourceTree = "<group>"; };
+		E1113195175706E100414E7B /* MaapFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MaapFirstViewController.m; sourceTree = "<group>"; };
+		E1113197175706E100414E7B /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		E1113199175706E100414E7B /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		E111319B175706E100414E7B /* MaapSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaapSecondViewController.h; sourceTree = "<group>"; };
+		E111319C175706E100414E7B /* MaapSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MaapSecondViewController.m; sourceTree = "<group>"; };
+		E111319E175706E100414E7B /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		E11131A0175706E100414E7B /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		E11131A3175706E100414E7B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MaapFirstViewController_iPhone.xib; sourceTree = "<group>"; };
+		E11131A6175706E100414E7B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MaapFirstViewController_iPad.xib; sourceTree = "<group>"; };
+		E11131A9175706E100414E7B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MaapSecondViewController_iPhone.xib; sourceTree = "<group>"; };
+		E11131AC175706E100414E7B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MaapSecondViewController_iPad.xib; sourceTree = "<group>"; };
+		E11131B3175706E100414E7B /* MaapTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MaapTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E11131B4175706E100414E7B /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		E11131BC175706E100414E7B /* MaapTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MaapTests-Info.plist"; sourceTree = "<group>"; };
+		E11131BE175706E100414E7B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E11131C0175706E100414E7B /* MaapTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaapTests.h; sourceTree = "<group>"; };
+		E11131C1175706E100414E7B /* MaapTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MaapTests.m; sourceTree = "<group>"; };
+		E19EC0C4175853EB0074567B /* BuyerViewListingTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BuyerViewListingTableCell.xib; sourceTree = "<group>"; };
+		E19EC0CF17585BA70074567B /* BuyerViewListingTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuyerViewListingTableCell.h; sourceTree = "<group>"; };
+		E19EC0D017585BA70074567B /* BuyerViewListingTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuyerViewListingTableCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E1113176175706E100414E7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E111317D175706E100414E7B /* UIKit.framework in Frameworks */,
+				E111317F175706E100414E7B /* Foundation.framework in Frameworks */,
+				E1113181175706E100414E7B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E11131AF175706E100414E7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E11131B5175706E100414E7B /* SenTestingKit.framework in Frameworks */,
+				E11131B6175706E100414E7B /* UIKit.framework in Frameworks */,
+				E11131B7175706E100414E7B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E1113170175706E100414E7B = {
+			isa = PBXGroup;
+			children = (
+				E1113182175706E100414E7B /* Maap */,
+				E11131BA175706E100414E7B /* MaapTests */,
+				E111317B175706E100414E7B /* Frameworks */,
+				E111317A175706E100414E7B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E111317A175706E100414E7B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E1113179175706E100414E7B /* Maap.app */,
+				E11131B3175706E100414E7B /* MaapTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E111317B175706E100414E7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E111317C175706E100414E7B /* UIKit.framework */,
+				E111317E175706E100414E7B /* Foundation.framework */,
+				E1113180175706E100414E7B /* CoreGraphics.framework */,
+				E11131B4175706E100414E7B /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E1113182175706E100414E7B /* Maap */ = {
+			isa = PBXGroup;
+			children = (
+				E19EC0D2175874C10074567B /* model */,
+				E19EC0CD175856060074567B /* component */,
+				E19EC0C91758558F0074567B /* view */,
+				E111318B175706E100414E7B /* MaapAppDelegate.h */,
+				E111318C175706E100414E7B /* MaapAppDelegate.m */,
+				E1113197175706E100414E7B /* first.png */,
+				E1113199175706E100414E7B /* first@2x.png */,
+				E111319E175706E100414E7B /* second.png */,
+				E11131A0175706E100414E7B /* second@2x.png */,
+				E1113183175706E100414E7B /* Supporting Files */,
+			);
+			path = Maap;
+			sourceTree = "<group>";
+		};
+		E1113183175706E100414E7B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E1113184175706E100414E7B /* Maap-Info.plist */,
+				E1113185175706E100414E7B /* InfoPlist.strings */,
+				E1113188175706E100414E7B /* main.m */,
+				E111318A175706E100414E7B /* Maap-Prefix.pch */,
+				E111318E175706E100414E7B /* Default.png */,
+				E1113190175706E100414E7B /* Default@2x.png */,
+				E1113192175706E100414E7B /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E11131BA175706E100414E7B /* MaapTests */ = {
+			isa = PBXGroup;
+			children = (
+				E11131C0175706E100414E7B /* MaapTests.h */,
+				E11131C1175706E100414E7B /* MaapTests.m */,
+				E11131BB175706E100414E7B /* Supporting Files */,
+			);
+			path = MaapTests;
+			sourceTree = "<group>";
+		};
+		E11131BB175706E100414E7B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E11131BC175706E100414E7B /* MaapTests-Info.plist */,
+				E11131BD175706E100414E7B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E19EC0C91758558F0074567B /* view */ = {
+			isa = PBXGroup;
+			children = (
+				E19EC0CC175855E90074567B /* maapsecondview */,
+				E19EC0CA1758559E0074567B /* maapfirstview */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		E19EC0CA1758559E0074567B /* maapfirstview */ = {
+			isa = PBXGroup;
+			children = (
+				E11131A2175706E100414E7B /* MaapFirstViewController_iPhone.xib */,
+				E11131A5175706E100414E7B /* MaapFirstViewController_iPad.xib */,
+				E1113194175706E100414E7B /* MaapFirstViewController.h */,
+				E1113195175706E100414E7B /* MaapFirstViewController.m */,
+			);
+			name = maapfirstview;
+			sourceTree = "<group>";
+		};
+		E19EC0CC175855E90074567B /* maapsecondview */ = {
+			isa = PBXGroup;
+			children = (
+				E111319B175706E100414E7B /* MaapSecondViewController.h */,
+				E111319C175706E100414E7B /* MaapSecondViewController.m */,
+				E11131A8175706E100414E7B /* MaapSecondViewController_iPhone.xib */,
+				E11131AB175706E100414E7B /* MaapSecondViewController_iPad.xib */,
+			);
+			name = maapsecondview;
+			sourceTree = "<group>";
+		};
+		E19EC0CD175856060074567B /* component */ = {
+			isa = PBXGroup;
+			children = (
+				E19EC0CE175856120074567B /* BuyerViewListingTableCell */,
+			);
+			name = component;
+			sourceTree = "<group>";
+		};
+		E19EC0CE175856120074567B /* BuyerViewListingTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				E19EC0C4175853EB0074567B /* BuyerViewListingTableCell.xib */,
+				E19EC0CF17585BA70074567B /* BuyerViewListingTableCell.h */,
+				E19EC0D017585BA70074567B /* BuyerViewListingTableCell.m */,
+			);
+			name = BuyerViewListingTableCell;
+			sourceTree = "<group>";
+		};
+		E19EC0D2175874C10074567B /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E1113178175706E100414E7B /* Maap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E11131C5175706E100414E7B /* Build configuration list for PBXNativeTarget "Maap" */;
+			buildPhases = (
+				E1113175175706E100414E7B /* Sources */,
+				E1113176175706E100414E7B /* Frameworks */,
+				E1113177175706E100414E7B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Maap;
+			productName = Maap;
+			productReference = E1113179175706E100414E7B /* Maap.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E11131B2175706E100414E7B /* MaapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E11131C8175706E100414E7B /* Build configuration list for PBXNativeTarget "MaapTests" */;
+			buildPhases = (
+				E11131AE175706E100414E7B /* Sources */,
+				E11131AF175706E100414E7B /* Frameworks */,
+				E11131B0175706E100414E7B /* Resources */,
+				E11131B1175706E100414E7B /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E11131B9175706E100414E7B /* PBXTargetDependency */,
+			);
+			name = MaapTests;
+			productName = MaapTests;
+			productReference = E11131B3175706E100414E7B /* MaapTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E1113171175706E100414E7B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Maap;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Joseph McCarthy";
+			};
+			buildConfigurationList = E1113174175706E100414E7B /* Build configuration list for PBXProject "Maap" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E1113170175706E100414E7B;
+			productRefGroup = E111317A175706E100414E7B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E1113178175706E100414E7B /* Maap */,
+				E11131B2175706E100414E7B /* MaapTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E1113177175706E100414E7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1113187175706E100414E7B /* InfoPlist.strings in Resources */,
+				E111318F175706E100414E7B /* Default.png in Resources */,
+				E1113191175706E100414E7B /* Default@2x.png in Resources */,
+				E1113193175706E100414E7B /* Default-568h@2x.png in Resources */,
+				E1113198175706E100414E7B /* first.png in Resources */,
+				E111319A175706E100414E7B /* first@2x.png in Resources */,
+				E111319F175706E100414E7B /* second.png in Resources */,
+				E11131A1175706E100414E7B /* second@2x.png in Resources */,
+				E11131A4175706E100414E7B /* MaapFirstViewController_iPhone.xib in Resources */,
+				E11131A7175706E100414E7B /* MaapFirstViewController_iPad.xib in Resources */,
+				E11131AA175706E100414E7B /* MaapSecondViewController_iPhone.xib in Resources */,
+				E11131AD175706E100414E7B /* MaapSecondViewController_iPad.xib in Resources */,
+				E19EC0C5175853EB0074567B /* BuyerViewListingTableCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E11131B0175706E100414E7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E11131BF175706E100414E7B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E11131B1175706E100414E7B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E1113175175706E100414E7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1113189175706E100414E7B /* main.m in Sources */,
+				E111318D175706E100414E7B /* MaapAppDelegate.m in Sources */,
+				E1113196175706E100414E7B /* MaapFirstViewController.m in Sources */,
+				E111319D175706E100414E7B /* MaapSecondViewController.m in Sources */,
+				E19EC0D117585BA70074567B /* BuyerViewListingTableCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E11131AE175706E100414E7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E11131C2175706E100414E7B /* MaapTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E11131B9175706E100414E7B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E1113178175706E100414E7B /* Maap */;
+			targetProxy = E11131B8175706E100414E7B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E1113185175706E100414E7B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1113186175706E100414E7B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E11131A2175706E100414E7B /* MaapFirstViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E11131A3175706E100414E7B /* en */,
+			);
+			name = MaapFirstViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		E11131A5175706E100414E7B /* MaapFirstViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E11131A6175706E100414E7B /* en */,
+			);
+			name = MaapFirstViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+		E11131A8175706E100414E7B /* MaapSecondViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E11131A9175706E100414E7B /* en */,
+			);
+			name = MaapSecondViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		E11131AB175706E100414E7B /* MaapSecondViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E11131AC175706E100414E7B /* en */,
+			);
+			name = MaapSecondViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+		E11131BD175706E100414E7B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E11131BE175706E100414E7B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E11131C3175706E100414E7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E11131C4175706E100414E7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E11131C6175706E100414E7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Maap/Maap-Prefix.pch";
+				INFOPLIST_FILE = "Maap/Maap-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E11131C7175706E100414E7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Maap/Maap-Prefix.pch";
+				INFOPLIST_FILE = "Maap/Maap-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E11131C9175706E100414E7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Maap.app/Maap";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Maap/Maap-Prefix.pch";
+				INFOPLIST_FILE = "MaapTests/MaapTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		E11131CA175706E100414E7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Maap.app/Maap";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Maap/Maap-Prefix.pch";
+				INFOPLIST_FILE = "MaapTests/MaapTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E1113174175706E100414E7B /* Build configuration list for PBXProject "Maap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E11131C3175706E100414E7B /* Debug */,
+				E11131C4175706E100414E7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E11131C5175706E100414E7B /* Build configuration list for PBXNativeTarget "Maap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E11131C6175706E100414E7B /* Debug */,
+				E11131C7175706E100414E7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E11131C8175706E100414E7B /* Build configuration list for PBXNativeTarget "MaapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E11131C9175706E100414E7B /* Debug */,
+				E11131CA175706E100414E7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E1113171175706E100414E7B /* Project object */;
+}
