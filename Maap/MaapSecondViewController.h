@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface MaapSecondViewController : UIViewController
+- (IBAction)apiTest:(id)sender;
 
 @end

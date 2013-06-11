@@ -9,4 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface MaapFirstViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource>
+@property(retain) NSMutableArray* ticketArray;
 @end
