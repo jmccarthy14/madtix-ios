@@ -18,9 +18,8 @@
 
 @implementation MaapFirstViewController
 @synthesize ticketArray;
+// todo put this in xib
 static NSString *buyerViewCellId = @"BuyerViewListingTableCellIdentifier";
-NSArray* showTitles;
-NSArray* showLocations;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -38,10 +37,6 @@ NSArray* showLocations;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typicsally from a nib.
-    showTitles = [NSArray arrayWithObjects:@"The Walkmen", @"Purity Ring", @"The Vaccines", @"Waxahatchee", @"John Hiatt", nil];
-    showLocations = [NSArray arrayWithObjects:@"St Paul, MN", @"San Francisco, CA", @"Boston, MA", @"Williamsburg, NY", @"Newark, NJ", nil];
-
 }
 
 - (void)didReceiveMemoryWarning
@@ -52,6 +47,7 @@ NSArray* showLocations;
 
 #pragma mark UITableViewDataSource
 
+
 - (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     BuyerViewListingTableCell *buyerViewListingTableCell = (BuyerViewListingTableCell *)[tableView dequeueReusableCellWithIdentifier:buyerViewCellId];
     if(!buyerViewListingTableCell) {
@@ -60,9 +56,14 @@ NSArray* showLocations;
     
     buyerViewListingTableCell.showTitle.text = [[ticketArray objectAtIndex:indexPath.row] title];
     buyerViewListingTableCell.location.text = [[ticketArray objectAtIndex:indexPath.row] pickup_location];
+    [buyerViewListingTableCell setBackgroundColor:[UIColor colorWithRed:240 green:240 blue:240 alpha:1]];
     
     return buyerViewListingTableCell;
 }
+
+//- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+//    [cell setBackgroundColor:[UIColor colorWithRed:.9 green:.9 blue:.9 alpha:1]];
+//}
 
 
 //- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -85,17 +86,14 @@ NSArray* showLocations;
     
     void (^successBlock)(NSURLRequest*, NSHTTPURLResponse*, id) = ^(NSURLRequest * request, NSHTTPURLResponse *response, id json) {
         NSArray *jsonArray = (NSArray *) json;
-        NSLog(@"Size of array: %d", [jsonArray count]);
+        NSLog(@"Size of ticket response: %d", [jsonArray count]);
         self.ticketArray = [[NSMutableArray alloc] init];
         for(NSDictionary* dictionary in jsonArray) {
-            NSLog(@"dict: %@", dictionary);
             MtTicketResponse* mtTicketResponse = [[MtTicketResponse alloc] init];
             [mtTicketResponse setValuesForKeysWithDictionary:[dictionary valueForKey:@"fields"]];
             [ticketArray addObject:mtTicketResponse];
         }
         [self.tableView reloadData];
-
-        NSLog(@"IP Address:");
     };
     
     void (^failBlock)(id, id, id, id) = ^(NSURLRequest *request, NSHTTPURLResponse *response, NSError* error, id json) {
