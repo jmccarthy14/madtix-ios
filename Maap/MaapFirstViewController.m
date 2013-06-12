@@ -10,6 +10,7 @@
 #import "BuyerViewListingTableCell.h"
 #import "MtTicketResponse.h"
 #import "AFJSONRequestOperation.h"
+#import "TicketViewController.h"
 
 @interface MaapFirstViewController ()
 
@@ -77,6 +78,9 @@ static NSString *buyerViewCellId = @"BuyerViewListingTableCellIdentifier";
 
 #pragma mark UITableViewDelegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSLog(@"SELECTED");
+    TicketViewController* ticketViewController = [[TicketViewController alloc] initWithTicket:[self.ticketArray objectAtIndex:indexPath.row]];
+    [self.navigationController pushViewController:ticketViewController animated:true];
     
 }
 

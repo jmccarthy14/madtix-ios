@@ -12,6 +12,8 @@
 
 #import "MaapSecondViewController.h"
 
+#import <GoogleMaps/GoogleMaps.h>
+
 @implementation MaapAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -29,6 +31,16 @@
     self.tabBarController = [[UITabBarController alloc] init];
     self.tabBarController.viewControllers = @[viewController1, viewController2];
     self.window.rootViewController = self.tabBarController;
+    self.navigationController = [[UINavigationController alloc] initWithRootViewController:self.window.rootViewController];
+    
+    // Google Maps
+    // TODO make configurable
+    [GMSServices provideAPIKey:@"AIzaSyCcJQTGZD_qUPxkC6plSrPeNh-fRTxEKXY"];
+    
+    // We don't want the bar to show
+    self.navigationController.navigationBarHidden = true;
+    [self.window addSubview:self.navigationController.view];
+
     [self.window makeKeyAndVisible];
     return YES;
 }

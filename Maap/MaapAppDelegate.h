@@ -10,6 +10,8 @@
 
 @interface MaapAppDelegate : UIResponder <UIApplicationDelegate, UITabBarControllerDelegate>
 
+@property (nonatomic, retain) IBOutlet UINavigationController *navigationController;
+
 @property (strong, nonatomic) UIWindow *window;
 
 @property (strong, nonatomic) UITabBarController *tabBarController;
