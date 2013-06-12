@@ -8,6 +8,8 @@
 
 #import "TicketViewController.h"
 #import <GoogleMaps/GoogleMaps.h>
+#import "AFJSONRequestOperation.h"
+#import "NSString+URLEncoding.h"
 
 @interface TicketViewController ()
 @property(strong, nonatomic) MtTicketResponse* ticket;
@@ -24,6 +26,7 @@
 - (id) initWithTicket:(MtTicketResponse *)mtTicketResponse {
     if (self = [super initWithNibName:@"TicketViewController" bundle:nil]) {
         self.ticket = mtTicketResponse;
+        [self fetchLocationCoordinatesRequest];
         
     }
     return self;
@@ -52,7 +55,40 @@
 }
 
 - (void) fetchLocationCoordinatesRequest {
+    NSString* encodedLocation = [self.ticket.pickup_location urlEncodeUsingEncoding:NSUTF8StringEncoding];
+    NSString *urlString = [NSString stringWithFormat:@"http://maps.googleapis.com/maps/api/geocode/json?address=%@&sensor=true",encodedLocation];
+    NSURL *url = [NSURL URLWithString:urlString];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
     
+    void (^successBlock)(NSURLRequest*, NSHTTPURLResponse*, id) = ^(NSURLRequest * request, NSHTTPURLResponse *response, id json) {
+        NSDictionary *jsonDictionary = (NSDictionary *) json;
+        NSLog(@"Json: %@", json);
+        NSString* addressFormatted =[[jsonDictionary valueForKeyPath:@"results.formatted_address"] objectAtIndex:0];
+        NSLog(@"address: %@", addressFormatted);
+        self.ticketLocationLabel.text = addressFormatted;
+        
+        NSString* latitude =[[jsonDictionary valueForKeyPath:@"results.geometry.location.lat"]objectAtIndex:0];
+        
+        NSString* longitude =[[jsonDictionary valueForKeyPath:@"results.geometry.location.lng"]objectAtIndex:0];
+        
+        NSLog(@"lat: %@, lng: %@", latitude, longitude);
+        
+        GMSCameraPosition *myLocation = [GMSCameraPosition cameraWithLatitude:[latitude doubleValue] longitude:[longitude doubleValue] zoom:14];
+        [mapView_ setCamera:myLocation];
+        
+        for(NSDictionary* values in jsonDictionary.allValues) {
+
+//            [mtTicketResponse setValuesForKeysWithDictionary:[dictionary valueForKey:@"fields"]];
+        }
+    };
+    
+    void (^failBlock)(id, id, id, id) = ^(NSURLRequest *request, NSHTTPURLResponse *response, NSError* error, id json) {
+        NSLog(@"fail");
+    };
+    
+    AFJSONRequestOperation *operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:request success:successBlock failure:failBlock];
+    
+    [operation start];
 }
 
 - (void)didReceiveMemoryWarning
